@@ -1,0 +1,79 @@
+$green: #a4c23d;
+$gray: #222;
+$pixel-font: 'minecraft', Arial, sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.game {
+  background: $green;
+  padding: 2rem;
+  position: relative;
+}
+
+.game__canvas {
+  border: 5px solid black;
+}
+
+.game__hud {
+  display: flex;
+  padding-bottom: .3125rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $pixel-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.game__dialogue {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .5);
+
+  .game--is-over & {
+    display: flex;
+  }
+}
+
+.game__restart {
+  font-family: $pixel-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: none;
+  border: 5px solid black;
+  padding: .75rem .75rem .3125rem;
+
+  &:hover {
+    cursor: pointer;
+    background: white;
+  }
+}
