@@ -1,6 +1,6 @@
 # Snake #
 
-The classic arcade game in ES6.
+The classic arcade game in ES6. Play here: https://mmapplebeck.github.io/snake/
 
 ### Cloning ###
 
