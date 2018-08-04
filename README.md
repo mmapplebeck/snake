@@ -26,7 +26,7 @@ Installing using yarn: `yarn install`
 
 Once installed, `npm run start` will start the game up at `localhost:8081`.
 
-You may also `npm run build` and open the generated `dist/index.html` file in your browser to play.
+You may also `npm run build` and open the generated `docs/index.html` file in your browser to play.
 
 ### Future Ideas ###
 
